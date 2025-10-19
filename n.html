@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+
+<Add Netflix 'N' logo>
+<link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2Ffree-png-netflix-logo-icon--333688653655217708%2F&psig=AOvVaw0AwoBQmRszF6eijPG3B4aq&ust=1760619988632000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiwht-ippADFQAAAAAdAAAAABAL">
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/1200x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding: 20px 50px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  select {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+  }
+
+  .signin-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .signin-btn:hover {
+    background-color: darkred;
+  }
+
+  /* Center content */
+  .content {
+    text-align: center;
+    margin-top: 120px;
+  }
+
+  .content h1 {
+    font-size: 48px;
+    font-weight: 800;
+  }
+
+  .content p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .email-form {
+    margin-top: 25px;
+  }
+
+  .email-input {
+    padding: 15px;
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 16px;
+  }
+
+  .get-started {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .get-started:hover {
+    background-color: darkred;
+  }
+
+  @media(max-width:600px) {
+    .content h1 {
+      font-size: 32px;
+    }
+    .email-input {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo" alt="Netflix Logo">
+      <div class="header-right">
+        <select>
+          <option>English</option>
+          <option>हिन्दी</option>
+        </select>
+        <button class="signin-btn">Sign In</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Unlimited movies, TV <br>shows and more</h1>
+      <p>Starts at ₹149. Cancel at any time.</p>
+      <br>
+      <p>Ready to watch? Enter your email to create or restart your <br>membership.</p>
+      <div class="email-form">
+        <input type="email" class="email-input" placeholder="Email address">
+        <button class="get-started">Get Started ></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
